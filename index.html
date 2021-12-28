@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeachCamp Site</title>
+
+    <!-- fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="/images/beach-camping-logo.png" type="image/x-icon">
+
+    <!-- owl carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="body">
+    <!-- navbar section starts -->
+    <nav class="navbar">
+      <div class="logo">
+        
+        <a href="#home"><img src="/images/camp-backpack.png" alt="camp-backpack"> Camp<span>Site</span></a>
+      </div>
+      <ul class="menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about-camp" class="nav-link">About</a></li>
+        <li><a href="#camp-pack" class="nav-link">Packages</a></li>
+        <!-- <li><a href="#service" class="nav-link">Services</a></li> -->
+        <li><a href="#camp-gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#special-day" class="nav-link">Special Day's</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <!-- <div class="media-icons">
+                <a href="#"><i class="fas fa-user" id="login-btn"></i></a>
+                <a href="#"><i class="fas fa-search" id="search-btn"></i></a>
+            </div>
+            <form action="" class="search-bar-box">
+                <input type="search" id="search-bar" placeholder="Search here...">
+                <label for="search-bar" class="fas fa-search"></label>
+            </form> -->
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <!-- navbar section ends -->
+
+    <!-- home-section starts -->
+    <section id="home" class="home">
+      <div class="content">
+        <h2>Always say yes to new adventures.</h2>
+        <p>“Your imagination is your preview of life’s coming attractions.”</p>
+        <a href="#package" class="btn">Discover more</a>
+      </div>
+      <div class="controls">
+        <span class="vid-btn" data-src="/videos/vid-2.mp4"></span>
+        <span class="vid-btn active" data-src="/videos/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="/videos/vid-1.mp4"></span>
+      </div>
+      <div class="video-container">
+        <video
+          src="/videos/vid-2.mp4"
+          id="video-slider"
+          loop
+          autoplay
+          muted
+        ></video>
+      </div>
+    </section>
+    <!-- home-section ends -->
+
+    <!-- login-sign up form starts -->
+    <!-- <section class="form" id="formFill">
+      <i class="fas fa-times" id="login-close-btn"></i>
+      <div class="form-container">
+        <div class="tab-header">
+          <div class="active">Sign Up</div>
+          <div>Sign In</div>
+        </div>
+        <div class="tab-content">
+          <div class="tab-body active">
+            <form action="" class="signup">
+              <div class="form-element">
+                <input type="name" class="login-box" placeholder="Enter Name" />
+              </div>
+              <div class="form-element">
+                <input
+                  type="email"
+                  class="login-box"
+                  placeholder="Enter Mail"
+                />
+              </div>
+              <div class="form-element">
+                <input
+                  type="password"
+                  class="login-box"
+                  placeholder="Enter Password"
+                />
+              </div>
+              <div class="form-element">
+                <button type="submit" value="submit">Sign up</button>
+              </div>
+              <div class="form-element">
+                <p>
+                  Already have an account<a href="#" id="signin">Sign in</a>
+                </p>
+              </div>
+            </form>
+          </div>
+          <div class="tab-body">
+            <form action="" class="signin">
+              <div class="form-element">
+                <input
+                  type="email"
+                  class="login-box"
+                  placeholder="Enter Mail"
+                />
+              </div>
+              <div class="form-element">
+                <input
+                  type="password"
+                  class="login-box"
+                  placeholder="Enter Password"
+                />
+              </div>
+              <div class="form-element">
+                <input type="checkbox" id="rememberme" name="rememberme" />
+                <label for="rememberme">remember me</label>
+              </div>
+              <div class="form-element">
+                <button type="submit" value="Sign in">Sign in</button>
+              </div>
+              <div class="form-element">
+                <p>
+                  forget password?<a href="#" id="forget-password"
+                    >Click here</a
+                  >
+                </p>
+              </div>
+              <div class="form-element">
+                <p>
+                  Create a new account<a href="#" id="signup">Register Now</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- login-sign up form ends -->
+
+    <!-- Booking section -->
+    <!-- <section class="book" id="book">
+      <div class="section-heading">
+        <div class="underline"></div>
+        <h2 class="heading">Book Your Trip Now</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="book-row">
+        <div class="img-box">
+          <img
+            class="book-img"
+            src="images/world_travel.png"
+            alt="world-travel"
+          />
+        </div>
+        <div class="booking-form">
+          <form action="">
+            <div class="input-box">
+              <input type="text" placeholder="From" />
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Destination" />
+            </div>
+            <div class="input-box">
+              <input type="number" placeholder="No of Guests" />
+            </div>
+            <div class="input-box">
+              <h4>Check-out</h4>
+              <input type="date" placeholder="No of Guests" />
+            </div>
+            <div class="input-box">
+              <h4>Check-in</h4>
+              <input type="date" placeholder="No of Guests" />
+            </div>
+            <div class="book-btn">
+              <a href="#" class="book-btn">Book</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- AboutCamping start-->
+    <div class="main-container">
+
+    <section class="container about-camp" id="about-camp">
+      <div class="heading">
+        <span>About Alibaug Beach Camping</span>
+      </div>
+      <div class="about-camp-desc">
+        <p>
+          Be the first to search for buried treasure — The ocean is full of
+          surprises and secrets. Beach camping lets you wake up, step out of
+          your tent, and have first dibs on everything that washed ashore while
+          you slept—sand dollars, starfish, sea glass, buried treasure… </p>
+
+          <p>Build yourself a castle—Who needs a high rise hotel when you can be an
+          architect and builder of your very own castle, complete with moat? You
+          can HGTV-it however you’d like, but we don’t recommend sleeping in it.</p> 
+          <p>
+              Watch epic sunrises and
+              sunsets—Any sunset you can watch outside is a great sunset. But not
+              much beats the open expanse of the sun rising or setting over the
+              water.
+          </p> 
+          <!-- Nom on fresh seafood—Avoid the tourist trap restaurants. Say no to hot
+          dogs and baked potatoes.Up your camp dinner game this winter by either
+          catching your own seafood or driving to a local market, then bringing
+          it back to cook over an open flame. -->
+        </p>
+      </div>
+    </section>
+    <!-- AboutCamping start-->
+    <!-- Camping Highlights start-->
+    <!-- Camping Highlights start-->
+    <section class="container camp-highlight" id="camp-highlight">
+      <div class="left-high">
+        <div class="heading">
+          <span>Alibaug Beach Camping Highlights</span>
+        </div>
+        <div class="high-points">
+          <div class="point">
+            <i class="fab fa-gg-circle"></i
+            ><span
+              >Enjoy a fun-filled beach side camping experience and soothe your
+              mind at the beauty of Alibaug beach</span
+            >
+          </div>
+          <div class="point">
+            <i class="fab fa-gg-circle"></i
+            ><span
+              >Stay in comfortable, clean and hygienic tents with the
+              mesmerizing view of beach and vast Arabian Sea</span
+            >
+          </div>
+          <div class="point">
+            <i class="fab fa-gg-circle"></i
+            ><span
+              >Make your stay more pleasant through indoor-outdoor games and a
+              warm bonfire with music</span
+            >
+          </div>
+          <div class="point">
+            <i class="fab fa-gg-circle"></i
+            ><span>This package is valued at INR 1,400/- in the market</span>
+          </div>
+          <div class="point">
+            <i class="fab fa-gg-circle"></i
+            ><span
+              >Experience an open air Bollywood movie screening with projector
+              and speakers</span
+            >
+          </div>
+          <div class="point">
+            <i class="fab fa-gg-circle"></i
+            ><span
+              >Plan a special weekend with live music performance at the
+              campsite</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Camping Highlights end-->
+
+
+    <!-- Camping overview start-->
+    <section class="container camp-overview" id="camp-overview">
+        <div class="heading">
+            <span>Beach Camping Overview</span>
+        </div>
+        <div class="camp-quick-info">
+            <span class="quick-title"><i class="fas fa-fighter-jet"></i>Quick Info :</span>
+            <div class="quick-info-items">
+                <p class="li"><i class="fas fa-map-marker-alt"></i> Beach Camping Location: <span class="ri">Nadgav beach, Alibaug</p>
+                <p class="li"><i class="fas fa-calendar-check in"></i>Check-in Time: <span class="ri">3:00</span> </p>
+                <p class="li"><i class="fas fa-calendar-check out"></i>Check-out Tme: <span class="ri">11:00</span></p>
+                <p class="li"><i class="fas fa-chart-line"></i>Activity Days: <span class="ri">Every Day</span></p>
+                <p class="li"><i class="fas fa-paper-plane"></i>Attractions Near Campsite: <span class="ri">Jenman Boating Club and Horse Riding, Chikni Hill, Water Sports, Nature's Trail Phanshad Wildlife Sanctuary, Dhavir Water Lake</span></p>
+            </div>
+        </div>
+        <div class="fix-menu">
+          <div class="menu-links">
+            <a href="#camp-schedule" class="fmli">Complete Schedule</a>
+            <a href="#camp-pack" class="fmli">Package Options</a>
+            <a href="#camp-map" class="fmli">Map</a>
+            <a href="#camp-gallery" class="fmli">Gallery</a>
+          </div>
+          <div class="menu-items">
+            <div id="camp-schedule">
+              <div class="day-wise-schedule">
+                <div class="day-one dot">
+                  <div class="day-sub-title st">
+                    <div class="day-f">Day 1</div>
+                    <div class="day-one-title"><p class="camp-sub-heading">Arrive at the Campsite</p></div>
+                    <div class="day-one-collapse">
+                      <a class="col-ex-one"><i class="fas fa-sort-down"></i></a>
+                    </div>
+                  </div>
+                  <div class="timewise-schedule col-exp-one">
+                    <p><span class="time">3:00 PM:</span> Arrive at the Alibaug camping site to begin your offbeat beach camping experience</p>
+                    <p><span class="time">4:30 PM:</span> You will be given a complimentary welcome beverage with snacks once you have checked in and have freshened up.</p>
+                    <p><span class="time">6:00 PM :</span> Settle down at beach and enjoy sea breeze with sunset view with your love ones .</p>
+                    <p><span class="time">7:00 PM</span> Enjoy the scrumptious Barbecue session at the beachside (Veg/Non-veg).</p>
+                    <p><span class="time">8:00 PM</span> Once the evening settles in, you can play some recreational indoor-outdoor games, enjoy around the warm and cozy campfire, with stories and music to accompany you.</p>
+                    <p><span class="time">9:00 PM</span> Dinner will be served here, with the options of both veg and non-veg unlimited buffet.</p>
+                    <p><span class="time">10:30 PM</span> Enjoy your open air movie screening session and head back to your tents as per your convenience.</p>
+                  </div>
+                </div>
+                <div class="day-two dot">
+                  <div class="day-sub-title">
+                    <div class="day-f">Day 2</div>
+                    <div class="day-two-title"><p class="camp-sub-heading">Checkout from the campsite</p></div>
+                    <div class="day-two-collapse">
+                      <a class="col-ex-two"><i class="fas fa-sort-down"></i></a>
+                    </div>
+                  </div>
+                  <div class="timewise-schedule col-exp-two">
+                    <p><span class="time">7:30 PM:</span> Wake up in the morning to witness the charming views of the Alibaug beach - sandy and clean.</p>
+                    <p><span class="time">8:00 PM:</span> You can freshen up and have your breakfast, post which, you will be checking out of the camps to bring the experience of Alibaug Beach Camping to an end.</p>
+                    <p><span class="time">11:00 PM :</span> Get back home with lots of memories and cherishable moments.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="camp-pack">
+              <div class="camp-sub-title st">
+                <span>Select Package Option</span>
+              </div>
+              <div class="top-desc">
+                <div class="desc desc-1">
+                  <div class="pack-details">
+                        <p class="camp-sub-heading">Beach Camping in Alibaug</p>
+                        <span><i class="far fa-clock"></i> 2 Days, 1 Night</span>
+                  </div>
+                  <div class="rd">
+                    <p class="cp">₹ 1,799</p>
+                    <p class="op">₹ 1,499</p>
+                    <p class="pp">Per Adult</p>
+                  </div>
+                </div>
+                <div class="desc desc-2">
+                  <p class="best-wishes">Enjoy a Beach Camping session with your loved ones in Alibaug and collect endless memories with a beautiful experience.</p>
+                  <div class="pi">
+                    <p class="camp-sub-heading">Price Includes</p>
+                    <div class="list-item">
+                      <i class="fas fa-star"></i>
+                      <div class="items">
+                        <p class="ht">Meals</p>
+                        <p>- Breakfast</p>
+                        <p>- BBQ Snacks (cooked by staff) - Limited Unlimited Dinner (Veg and Non-Veg)</p>
+                        <p>- Evening Tea & Snacks</p>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <i class="fas fa-star"></i>
+                      <div class="items">
+                        <p class="ht">Activities</p>
+                        <p>- Camping</p>
+                        <p>- Movie screening <span>(based on availability of number of peoples)</span></p>
+                        <p>- Bonfire with music</p>
+                        <p>- Light Indoor/outdoor Activities</p>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <i class="fas fa-star"></i>
+                      <div class="items">
+                        <p class="ht">Accomodation</p>
+                        <p>- Tent stay on double sharing basis</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div id="camp-map">
+              <div class="camp-sub-title st">
+                <span>Location</span>
+              </div>
+              <div class="camp-loc">
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30278.92191726795!2d72.88395766502252!3d18.444426797002233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be868807e8117f9%3A0xf36f9b1891a967ae!2sKashid%20Beach!5e0!3m2!1sen!2sin!4v1640516861839!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23117.819051867402!2d72.89411001172127!3d18.444540047586262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be869e09596b4bb%3A0xd07d08aa410201e!2sKashid%20Beach!5e0!3m2!1sen!2sin!4v1640518120303!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.5893216591185!2d72.9224623148931!3d18.54745158739335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x793b073879089916!2zMTjCsDMyJzUwLjgiTiA3MsKwNTUnMjguNyJF!5e0!3m2!1sen!2sin!4v1640623163674!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+            <div id="camp-gallery">
+              <div class="camp-sub-title st">
+                <span>Gallery</span>
+              </div>
+              <!-- seemore slide -->
+              <div class="gallery-items-see-more">
+                <!-- close btn start -->
+                <a class="sms-close-btn"><i class="fas fa-times"></i></a>
+                <!-- close btn end -->
+                <div class="seemoreslide slick">
+                <div class="brand-box">
+                    <a><img loading="lazy" src="/images/csi-1.jpeg" alt="brand1"></a>
+                </div>
+                <div class="brand-box">
+                    <a><img  src="/images/csi-2.jpeg" alt="brand2"></a>
+                </div>
+                <div class="brand-box">
+                    <a><img  src="/images/csi-3.jpeg" alt="brand3"></a>
+                </div>
+                <div class="brand-box">
+                    <a><img  src="/images/csi-6.jpeg" alt="brand6"></a>
+                </div>
+                <div class="brand-box">
+                    <a><img  src="/images/csi-7.jpeg" alt="brand7"></a>
+                </div>
+                <div class="brand-box">
+                    <a><img  src="/images/csi-8.jpeg" alt="brand8"></a>
+                </div>
+                <div class="brand-box">
+                    <a><img  src="/images/csi-9.jpeg" alt="brand9"></a>
+                </div>
+                <div class="brand-box">
+                    <a><img  src="/images/csi-10.jpeg" alt="brand10"></a>
+                </div>
+                <div class="brand-box">
+                    <a><img  src="/images/csi-4.jpeg" alt="brand4"></a>
+                </div>
+                <div class="brand-box">
+                    <a><img  src="/images/csi-5.jpeg" alt="brand5"></a>
+                </div>
+                <div class="brand-box">
+                    <a><img  src="/images/csi-11.jpeg" alt="brand11"></a>
+                </div>
+                <div class="brand-box">
+                    <a><img  src="/images/csi-12.jpeg" alt="brand12"></a>
+                </div>
+                <div class="brand-box">
+                    <a><img  src="/images/csi-13.jpeg" alt="brand13"></a>
+                </div>
+                <div class="brand-box">
+                    <a><img  src="/images/csi-14.jpeg" alt="brand14"></a>
+                </div>
+                <div class="brand-box">
+                    <a><img  src="/images/csi-15.jpeg" alt="brand15"></a>
+                </div>
+                <div class="brand-box">
+                    <a><img  src="/images/csi-16.jpeg" alt="brand16"></a>
+                </div>
+              </div>
+              </div>
+              <div class="gallery-items">
+                <div class="slider slick">
+                <div class="brand-box">
+                    <a class="click-me-img"><img src="/images/csi-1.jpeg" alt="brand1"></a>
+                </div>
+                <div class="brand-box">
+                    <a class="click-me-img"><img src="/images/csi-2.jpeg" alt="brand2"></a>
+                </div>
+                <div class="brand-box">
+                    <a class="click-me-img"><img src="/images/csi-3.jpeg" alt="brand3"></a>
+                </div>
+                <div class="brand-box">
+                    <a class="click-me-img"><img src="/images/csi-6.jpeg" alt="brand4"></a>
+                </div>
+                <div class="brand-box">
+                    <a class="click-me-img"><img src="/images/csi-7.jpeg" alt="brand5"></a>
+                </div>
+                <div class="brand-box">
+                    <a class="click-me-img"><img src="/images/csi-8.jpeg" alt="brand16"></a>
+                </div>
+                <div class="brand-box">
+                    <a class="click-me-img"><img src="/images/csi-9.jpeg" alt="brand7"></a>
+                </div>
+                <div class="brand-box">
+                    <a class="click-me-img"><img src="/images/csi-10.jpeg" alt="brand8"></a>
+                </div>
+              </div>
+              </div>
+              <div class="see-more">
+                <a class="see-more-btn">See More</a>
+              </div>
+            </div>
+         </div>
+      </div>
+    </section>
+    <!-- Camping overview end-->
+
+
+
+    <!-- service section starts -->
+    <!-- <section class="service" id="service">
+      <div class="section-heading">
+        <div class="underline"></div>
+        <h2 class="heading">Services</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="service-box">
+        <div class="box">
+          <div class="content">
+            <i class="fas fa-hotel"></i>
+            <h4>Affordable Hotels</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates debitis labore quae provident sint quisquam!
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <i class="fas fa-utensils"></i>
+            <h4>Food and Drinks</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates debitis labore quae provident sint quisquam!
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <i class="fas fa-briefcase"></i>
+            <h4>Business Amenities</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates debitis labore quae provident sint quisquam!
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <i class="fas fa-globe-asia"></i>
+            <h4>Around the World</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates debitis labore quae provident sint quisquam!
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <i class="fas fa-plane"></i>
+            <h4>Fastest Travel</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates debitis labore quae provident sint quisquam!
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <i class="fas fa-hiking"></i>
+            <h4>Adventures</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates debitis labore quae provident sint quisquam!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- service section starts -->
+
+    <!-- gallery section starts -->
+    <!-- <section class="gallery" id="gallery">
+      <div class="section-heading">
+        <div class="underline"></div>
+        <h2 class="heading">Gallery</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="gallery-box">
+        <div class="box">
+          <img src="images/p1-goa.jpg" alt="card-image1" />
+          <div class="gallery-info">
+            <h4>Road</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi,
+              incidunt.
+            </p>
+            <div class="btn">
+              <a href="#" class="btn">See More</a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/p1-goa.jpg" alt="card-image1" />
+          <div class="gallery-info">
+            <h4>Beach</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi,
+              incidunt.
+            </p>
+            <div class="btn">
+              <a href="#" class="btn">See More</a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/p1-goa.jpg" alt="card-image1" />
+          <div class="gallery-info">
+            <h4>Mountain</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi,
+              incidunt.
+            </p>
+            <div class="btn">
+              <a href="#" class="btn">See More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- gallery section ends -->
+
+    <!-- review section starts -->
+    <!-- <section class="review" id="review">
+      <div class="section-heading">
+        <div class="underline"></div>
+        <h2 class="heading">Reviews</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="container">
+        <div class="carousel owl-carousel">
+          <div class="card">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/p1-goa.jpg" alt="" />
+              </div>
+              <div class="review-content">
+                <h4>John Deep</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+                  aut, non consequatur quo illo totam!
+                </p>
+              </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/p1-goa.jpg" alt="" />
+              </div>
+              <div class="review-content">
+                <h4>John Deep</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+                  aut, non consequatur quo illo totam!
+                </p>
+              </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/p1-goa.jpg" alt="" />
+              </div>
+              <div class="review-content">
+                <h4>John Deep</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+                  aut, non consequatur quo illo totam!
+                </p>
+              </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/p1-goa.jpg" alt="" />
+              </div>
+              <div class="review-content">
+                <h4>John Deep</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+                  aut, non consequatur quo illo totam!
+                </p>
+              </div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- review section ends -->
+
+    <!-- roadvan starts -->
+    <section class="roadvan" id="roadvan">
+       <div class="img-box">
+          <img class="contact-img c-van" src="images/camp-van.png" alt="" />
+          <img class="contact-img c-road" src="images/camp-road.png" alt="" />
+          <img class="contact-img c-road" src="images/camp-road.png" alt="" />
+          <img class="contact-img c-road" src="images/camp-road.png" alt="" />
+          <img class="contact-img c-road" src="images/camp-road.png" alt="" />
+          <img class="contact-img c-road" src="images/camp-road.png" alt="" />
+          <img class="contact-img c-site" src="images/beach-camping-logo.png" alt="" />
+        </div>
+    </section>
+    <!-- roadvan ends -->
+
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+      <div class="section-heading">
+        <div class="underline"></div>
+        <h2 class="heading">Contact Us</h2>
+        <div class="underline"></div>
+      </div>
+      <!-- <div class="contact-note">
+        <p>If you are interested for this amazing Beach Camping, kindly fill this Contact form below. We will get in touch with you shortly and complete your booking. </p>
+        <p>Or </p>
+      </div> -->
+      <div class="contact-row">
+       
+        <div class="get-in-touch">
+          <div class="get-in-touch-cont">
+            <div class="st">
+              <span>Get in touch</span>
+            </div>
+            <div class="number box">
+              <div class="icon">
+                <i class="fas fa-envelope-open"></i>
+              </div>
+              <div class="info">
+                <p class="ct">Mobile No:</p>
+                <p class="cd"><span>+91 9082865576</span> / <span>+91 9082865576</span></p>
+              </div>
+            </div>
+            <div class="email box">
+              <div class="icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info">
+                <p class="ct">Email id:</p>
+                <p class="cd"><a href="mailto:swapnilgole@gmail.com">swapnilgole@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="address box">
+              <div class="icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="info">
+                <p class="ct">Address:</p>
+                <p class="cd"><a target="_blank" href="https://www.google.com/maps?q=18.5474516,72.924651&z=17&hl=en">Alibag-Revadanda Rd, fort, Revdanda, Maharashtra 402202</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <div class="st">
+            <span>Message us</span>
+          </div>
+          <form action="#">
+            <div class="input-box">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter Your Name"
+              required/>
+            </div>
+            <div class="input-box">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Your Email"
+              required/>
+            </div>
+            <div class="input-box">
+              <input     oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+
+                type="number"
+                name="number"
+                id="number"
+                min="0"
+                max="9" maxlength="10"
+                placeholder="Enter Mobile Number" required
+              />
+            </div>
+            <div class="input-box">
+              <input class="new-date"
+                type="date"
+                name="date"
+                id="date"
+              required/>
+            </div>
+            <div class="input-box">
+              <input
+                type="number"
+                name="noofmem"
+                id="noofmem" min="1" max="5" placeholder="No of members - max:5 / min:1"
+              required/>
+              <!-- <textarea
+                name="message"
+                id="message"
+                cols="20"
+                rows="5"
+                placeholder="Any Message"
+              ></textarea> -->
+            </div>
+            <div class="submit-btn">
+              <a href="#">Submit</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- top cursor starts-->
+    <div class="container scroll-top d-block">
+      <i class="fas fa-chevron-up" onclick="topFunction()" id="top-btn"></i>
+    </div>
+    <!-- top cursor end -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+      <!-- <div class="footer-container">
+        <div class="box">
+          <h4>About Us</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum
+            ratione quisquam autem recusandae minus expedita beatae illo
+            architecto veniam.
+          </p>
+        </div>
+        <div class="box">
+          <h4>Branch Locations</h4>
+          <div class="footer-link">
+            <a href="#">India</a>
+          </div>
+          <a href="#">USA</a>
+          <a href="#">Russia</a>
+          <a href="#">Japan</a>
+        </div>
+        <div class="box">
+          <h4>Quick Links</h4>
+          <a href="#">home</a>
+          <a href="#">booking</a>
+          <a href="#">package</a>
+          <a href="#">services</a>
+          <a href="#">gallery</a>
+          <a href="#">reviews</a>
+          <a href="#">contact</a>
+        </div>
+        <div class="box">
+          <h4>follow us</h4>
+          <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+          <a href="#"><i class="fab fa-facebook"></i>facebook</a>
+          <a href="#"><i class="fab fa-youtube"></i>youtube</a>
+          <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+          <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+        </div>
+      </div> -->
+      <div class="credit">
+        <h2>
+          <span>&#169; 2021 BeachCamp Site</span> | All Rights Reserved
+        </h2>
+      </div>
+    </section>
+    <!-- footer section ends -->
+    </div>
+  
+    <!-- Jquery CDN -->
+    <!-- <script src="https://code.jquery.com/ui/1.13.0-rc.3/jquery-ui.min.js" integrity="sha256-R6eRO29lbCyPGfninb/kjIXeRjMOqY3VWPVk6gMhREk=" crossorigin="anonymous"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+    <!-- Owl carousel CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- slick CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/imgslider.js"></script>
+    <script src="js/index.js"></script>
+    <!-- External JS -->
+  </body>
+</html>
