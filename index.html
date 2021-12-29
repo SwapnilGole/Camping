@@ -624,7 +624,7 @@
           </div>
           <form action="#">
             <div class="input-box">
-              <input
+              <input title="Enter your name"
                 type="text"
                 name="name"
                 id="name"
@@ -632,7 +632,7 @@
               required/>
             </div>
             <div class="input-box">
-              <input
+              <input title="Enter your email"
                 type="email"
                 name="email"
                 id="email"
@@ -641,7 +641,7 @@
             </div>
             <div class="input-box">
               <input     oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-
+              title="Enter your number"
                 type="number"
                 name="number"
                 id="number"
@@ -651,14 +651,14 @@
               />
             </div>
             <div class="input-box">
-              <input class="new-date"
+              <input class="new-date" title="Choose Check-in date"
                 type="date"
                 name="date"
                 id="date" placeholder="Select camping date"
               required/>
             </div>
             <div class="input-box">
-              <input
+              <input title="Enter number of members"
                 type="number"
                 name="noofmem"
                 id="noofmem" min="1" max="5" placeholder="No of members"
