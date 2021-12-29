@@ -1237,7 +1237,7 @@ section {
 .contact form .submit-btn {
   margin: 0.5rem auto;
 }
-.contact form .submit-btn a {
+.contact form .submit-btn button {
   color: #fff;
   padding: 0.5rem 1rem;
   background: var(--orange-color);
@@ -1246,8 +1246,11 @@ section {
   transition: 0.3s linear;
   font-weight: 600;
   text-align: center;
+  border: none;
+  outline: none;
+  border: 1px solid var(--orange-color);
 }
-.contact form .submit-btn a:hover {
+.contact form .submit-btn button:hover {
   border: 1px solid var(--orange-color);
   color: var(--orange-color);
   background: transparent;
