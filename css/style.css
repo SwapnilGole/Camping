@@ -49,18 +49,19 @@ html {
 }
 
 /* section headings */
-.package h2,
+/* .package h2,
 .book h2,
 .service h2,
 .gallery h2,
-.review h2,
+.review h2, */
 .contact h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background: var(--orange-color);
   color: #fff;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  margin: 1rem 0;
 }
 .underline {
   width: 5rem;
@@ -88,6 +89,10 @@ html {
 }
 .navbar.sticky .menu li a {
   color: var(--orange-color);
+}
+.navbar.sticky {
+  /* margin-bottom: 5rem; */
+  position: relative;
 }
 .navbar .logo a {
   font-size: 2rem;
@@ -271,8 +276,8 @@ section {
 }
 .main-container {
   width: 100%;
-  max-height: calc(100vh - 50rem);
-  margin-top: 5rem;
+  min-height: calc(100vh - 50rem);
+  /* max-height: calc(100vh - 50rem); */
 }
 /* about camping */
 .about-camp-desc p {
@@ -372,7 +377,7 @@ section {
 .fix-menu .fmli {
   width: 100%;
   padding: 1rem;
-  margin: 0;
+  margin: auto;
   text-align: center;
   color: #fdba55;
   font-size: 1.05rem;
@@ -416,6 +421,8 @@ section {
   justify-content: space-between;
 }
 #camp-schedule .day-sub-title .day-f {
+  font-size: 1rem;
+  font-weight: 400;
   position: relative;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
@@ -456,7 +463,7 @@ section {
   transition: 2s ease-in-out;
 }
 .timewise-schedule p {
-  margin: 0.5rem 0;
+  margin: 0.5rem 0 0.5rem -0.5rem;
   font-size: 1rem;
   font-weight: 500;
   width: 90%;
@@ -592,6 +599,7 @@ section {
 #camp-gallery .brand-box img {
   width: 400px;
   height: 250px;
+  margin: 0 auto;
 }
 /* seemoreslide */
 #camp-gallery .gallery-items-see-more {
@@ -655,7 +663,6 @@ section {
 #camp-gallery .gallery-items-see-more .brand-box img {
   width: 80%;
   height: 550px;
-  /* padding-bottom: 80rem; */
   margin: 3rem auto;
 }
 
@@ -702,224 +709,6 @@ section {
   color: #f79707;
   background-color: #fff;
 }
-/*login - signup form section */
-/* .form {
-  position: fixed;
-  left: -100%;
-  top: 0;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 10;
-  transition: 0.5s ease-in-out;
-}
-.form.active {
-  left: 0;
-}
-.form-container {
-  background: #fff;
-  width: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.form-container .tab-header {
-  height: 50px;
-  line-height: 50px;
-}
-.form-container .tab-header > div {
-  width: 50%;
-  float: left;
-  font-size: 1.25rem;
-  font-weight: 600;
-  text-align: center;
-  background: #555;
-  cursor: pointer;
-  color: #fff;
-}
-.form-container .tab-header > div.active {
-  background: #fff;
-  color: #111;
-}
-.form-container .tab-content {
-  padding: 1rem;
-}
-.form-container .tab-content .form-element {
-  margin: 1rem 0;
-}
-.form-container .tab-content .form-element input {
-  width: 100%;
-  padding: 1rem;
-  font-size: 1rem;
-  color: #111;
-  font-weight: 600;
-  border-radius: 0.25rem;
-  outline: none;
-  border: none;
-  background: #e0dbdb;
-}
-.form-container .tab-content .form-element input:focus {
-  border: 1px solid var(--orange-color);
-}
-.form-container .tab-content input[type="checkbox"] {
-  width: 2rem;
-}
-.form-container .tab-content .form-element label {
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.25rem;
-  color: #333;
-}
-#signin,
-#signup,
-#forget-password {
-  font-size: 1rem;
-  font-weight: 600;
-  color: rgb(12, 71, 235);
-  margin: 0 1rem;
-  text-decoration: underline;
-  text-align: center;
-  transition: all 0.1s linear;
-}
-#signin:hover,
-#signup:hover,
-#forget-password:hover {
-  color: var(--orange-color);
-}
-.form-container .form-element button {
-  width: 100%;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  outline: none;
-  background: var(--orange-color);
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-.form-container .form-element button:hover {
-  color: var(--orange-color);
-  background: transparent;
-  border: 1px solid var(--orange-color);
-}
-.form-container .tab-content > div.active {
-  display: block;
-}
-.form-container .tab-content > div {
-  display: none;
-}
-.form #login-close-btn {
-  position: absolute;
-  top: 4rem;
-  right: 2rem;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  background: #fda;
-  box-shadow: var(--box-shadow-light);
-  cursor: pointer;
-}
-.form .form-container.active {
-  left: 0%;
-} */
-
-/* booking section*/
-/* .book,
-.contact,
-.package,
-.service,
-.gallery,
-.review {
-  padding: 5rem 4rem 1rem;
-}
-.book .heading {
-  text-align: center;
-  border-radius: 0.5rem;
-}
-.book .heading span {
-  font-size: 1.5rem;
-  font-weight: 600;
-  background: rgb(5, 144, 224);
-  color: #fff;
-  border-radius: 0.25rem;
-}
-.book .heading .space {
-  background: transparent;
-}
-.book .book-row,
-.contact .contact-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 1.5rem;
-  padding: 2rem 0;
-}
-.book .booking-form,
-.contact .contact-form {
-  width: calc(50% - 20px);
-}
-
-.book .book-row .book-img,
-.contact .contact-row .contact-img {
-  width: 400px;
-  height: 400px;
-}
-.book .book-row form,
-.contact .contact-row form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  border-radius: 0.5rem;
-  box-shadow: var(--box-shadow-medium);
-  padding: 1rem;
-}
-.book .book-row form .input-box {
-  padding: 0.5rem;
-  width: 100%;
-}
-.book .book-row form .input-box input {
-  border-radius: 0.25rem;
-  border: 1px solid var(--orange-color);
-  color: #111;
-  width: 100%;
-  padding: 0.5rem;
-  text-transform: none;
-  font-size: 1rem;
-  font-weight: 600;
-}
-.book .book-row form .input-box input::placeholder {
-  font-size: 1rem;
-  font-weight: 600;
-  color: rgb(121, 121, 118);
-}
-.book .book-row form .book-btn {
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-}
-.book .book-row form .book-btn a {
-  color: #fff;
-  background: var(--orange-color);
-  border-radius: 0.5rem;
-
-  cursor: pointer;
-  transition: 0.3s linear;
-  font-weight: 600;
-  text-align: center;
-}
-.book .book-row form .book-btn a:hover {
-  border: 1px solid var(--orange-color);
-  color: var(--orange-color);
-  background: transparent;
-} */
 
 /* packages */
 .section-heading {
@@ -927,7 +716,7 @@ section {
   align-items: center;
   justify-content: center;
 }
-.package .box-container {
+/* .package .box-container {
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-gap: 1.5rem;
@@ -1010,10 +799,10 @@ section {
   color: var(--orange-color);
   background: transparent;
   border: 1px solid var(--orange-color);
-}
+} */
 
 /* services */
-.service .service-box {
+/* .service .service-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
@@ -1054,10 +843,10 @@ section {
   font-size: 1.25rem;
   color: #333;
   text-align: center;
-}
+} */
 
 /* gallery */
-.gallery .gallery-box {
+/* .gallery .gallery-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
@@ -1133,10 +922,10 @@ section {
   color: var(--orange-color);
   border: 1px solid var(--orange-color);
   background: transparent;
-}
+} */
 
 /* review section*/
-.review .container {
+/* .review .container {
   padding: 2rem 0;
 }
 .review .review-slider {
@@ -1202,6 +991,130 @@ section {
 .owl-dot.active,
 .owl-dot:hover {
   background: var(--orange-color) !important;
+} */
+
+/* special-day */
+.special-day {
+  width: 80%;
+  margin: 4rem auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.9);
+  border-radius: 0.5rem;
+  padding: 6rem 2rem 2rem;
+}
+.special-day .special-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.special-day .special-title span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #face08;
+}
+.special-offer {
+  width: 100%;
+}
+.special-offer .offer-details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.special-offer .offer-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.special-offer .offer-desc .offer-h {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: rgb(100, 94, 94);
+  animation: lightchange 2s infinite;
+  text-decoration: underline;
+}
+@keyframes lightchange {
+  0% {
+    color: #242323;
+  }
+  25% {
+    color: #4f5d8d;
+  }
+  50% {
+    color: #232370;
+  }
+  100% {
+    color: #154917;
+  }
+}
+.special-offer .offer-desc .offer-subh {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(32, 112, 150);
+  margin: 0.5rem 0;
+}
+.special-offer .offer-desc .offer-pr {
+  font-size: 1.05rem;
+  font-weight: 600;
+  background-color: rgb(49, 97, 97);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  color: rgb(255, 255, 255);
+}
+.special-offer .offer-desc .offer-pr .ap {
+  color: #fdba55;
+  font-size: 1.5rem;
+}
+.special-offer .offer-desc .offer-pr .cp {
+  color: #fdba55;
+  font-size: 0.9rem;
+  text-decoration: 1px solid #fff line-through;
+}
+.special-offer .offer-details .img-box img {
+  width: 100px;
+  height: 100px;
+}
+.special-offer .btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 0;
+}
+.special-offer .btn-box a {
+  color: #fff;
+  background-color: #face08;
+  border: 2px solid rgba(226, 157, 7, 0.568);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease-in-out;
+}
+.special-offer .btn-box a:hover {
+  /* border: 2px solid #fff; */
+  color: #face08;
+  background-color: #fff;
+}
+.special-offer .offer-details .img-1 {
+  animation: rotateme 1s alternate-reverse ease-in-out infinite;
+}
+@keyframes rotateme {
+  0% {
+    transform: scale(0.8) rotate(0deg);
+  }
+  50% {
+    transform: scale(1) rotate(50deg);
+  }
+}
+.special-offer .offer-details .img-2 {
+  animation: liftme 1s alternate-reverse ease-in-out infinite;
+}
+@keyframes liftme {
+  0% {
+    transform: translateY(40%);
+  }
+  50% {
+    transform: translateY(-40%);
+  }
 }
 /* roadvan */
 .roadvan {
@@ -1229,7 +1142,7 @@ section {
     transform: translate(0%, 10%);
   }
   100% {
-    transform: translate(210%, 10%);
+    transform: translate(700%, 10%);
   }
 }
 .roadvan .c-van,
@@ -1239,14 +1152,35 @@ section {
 }
 .roadvan .c-van {
   transform: translateY(10%);
-  animation: letsgo 3s ease-in-out infinite;
+  animation: letsgo 5s ease-in-out infinite;
 }
 
 .roadvan .c-road {
   width: 50px;
-  /* position: relative; */
   transform: translateY(50%) rotate(90deg);
   z-index: -2;
+}
+.roadvan .text-msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  /* left: 50%; */
+  /* transform: translate(-50%); */
+}
+.roadvan .text-msg span {
+  color: #fff;
+  /* position: relative;
+  transform: translate(-50%);
+  left: 50%; */
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 auto;
+  border-bottom: 1px dashed #fff;
 }
 
 /* contact section*/
@@ -1277,10 +1211,6 @@ section {
   background-color: #fff;
   margin: 1rem 0;
   border-radius: 0.5rem;
-}
-.contact .contact-row .get-in-touch,
-.contact .contact-row .contact-form {
-  padding: 0.5rem;
 }
 .contact .contact-row .input-box {
   width: 100%;
@@ -1337,7 +1267,8 @@ section {
   padding: 1rem;
 }
 
-.contact .get-in-touch {
+.contact .get-in-touch,
+.contact .contact-form {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -1368,6 +1299,21 @@ section {
 .get-in-touch .box .ct {
   font-size: 1.15rem;
   font-weight: 600;
+}
+.get-in-touch .box .cd span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(71, 101, 109);
+  cursor: pointer;
+}
+.get-in-touch .box .cd a {
+  font-weight: 600;
+  color: rgb(71, 101, 109);
+  transition: all 0.3s ease-in-out;
+}
+.get-in-touch .box .cd span:hover,
+.get-in-touch .box .cd a:hover {
+  color: rgb(108, 143, 153);
 }
 /* footer section */
 .footer {
@@ -1441,6 +1387,20 @@ section {
 }
 
 /* media queries */
+@media only screen and (max-width: 1500px) {
+  @keyframes letsgo {
+    100% {
+      transform: translate(600%, 10%);
+    }
+  }
+}
+@media only screen and (max-width: 1350px) {
+  @keyframes letsgo {
+    100% {
+      transform: translate(500%, 10%);
+    }
+  }
+}
 @media only screen and (max-width: 1200px) {
   html {
     font-size: 85%;
@@ -1478,6 +1438,11 @@ section {
     background: #4f5050;
     cursor: pointer;
     transition: 0.3s linear;
+  }
+  @keyframes letsgo {
+    100% {
+      transform: translate(400%, 10%);
+    }
   }
 }
 
@@ -1539,12 +1504,68 @@ section {
   .service .service-box .box p {
     font-size: 1rem;
   }
+  .roadvan .c-van,
+  .roadvan .c-site {
+    width: 100px;
+    height: 100px;
+  }
+  .roadvan .c-road {
+    width: 50px;
+    height: 100px;
+    transform: translateY(30%) rotate(90deg);
+  }
+  @keyframes letsgo {
+    100% {
+      transform: translate(530%, 10%);
+    }
+  }
+  /* speial-day */
+  .special-day .special-title span {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+  }
+  .special-offer .offer-desc .offer-h {
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+  .special-offer .offer-desc .offer-subh {
+    font-size: 1rem;
+  }
+  .special-offer .offer-desc .offer-pr {
+    font-size: 1.05rem;
+  }
+  .special-offer .offer-desc .offer-pr .ap {
+    font-size: 1.35rem;
+  }
+  .special-offer .offer-desc .offer-pr .cp {
+    font-size: 0.9rem;
+  }
+  .special-offer .offer-details .img-box img {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
   .package .box-container {
     display: grid;
     grid-template-columns: repeat(3, auto);
+  }
+  @keyframes letsgo {
+    100% {
+      transform: translate(450%, 10%);
+    }
+  }
+  .contact .contact-row {
+    flex-direction: column;
+    gap: 0rem;
+    padding: 2rem 0.5rem;
+    margin: 1rem 0;
+  }
+  .contact .contact-row .get-in-touch,
+  .contact .contact-row .contact-form {
+    padding: 0.5rem;
+    width: 100%;
   }
 }
 
@@ -1617,6 +1638,111 @@ section {
   .footer .footer-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .road-1 {
+    display: none;
+  }
+  .roadvan .c-van,
+  .roadvan .c-site {
+    width: 75px;
+    height: 75px;
+  }
+  .roadvan .c-road {
+    width: 30px;
+    height: 75px;
+    transform: translateY(30%) rotate(90deg);
+  }
+  @keyframes letsgo {
+    100% {
+      transform: translate(450%, 10%);
+    }
+  }
+
+  .about-camp,
+  .camp-highlight,
+  .camp-overview {
+    width: 90%;
+  }
+  #camp-schedule .timewise-schedule:after {
+    top: -2%;
+    left: -3%;
+    height: 104%;
+  }
+  .contact {
+    width: 90%;
+    margin: 2rem auto;
+  }
+  .contact h2 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .underline {
+    width: 2rem;
+    height: 5px;
+  }
+  .fix-menu .fmli {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  #camp-gallery .gallery-items-see-more {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  #camp-gallery
+    .gallery-items-see-more
+    .seemoreslide
+    .slick-dots
+    li
+    button::before {
+    display: none;
+  }
+  #camp-gallery .seemoreslide {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem auto;
+  }
+  #camp-gallery .gallery-items-see-more {
+    padding: 1rem;
+  }
+  #camp-gallery .gallery-items-see-more .brand-box img {
+    width: 80%;
+    height: 450px;
+  }
+  .roadvan .text-msg span {
+    font-size: 1rem;
+  }
+  /* speial-day */
+  .special-day {
+    width: 90%;
+  }
+  .special-day .special-title span {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+  }
+  .special-offer .offer-desc .offer-h {
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+  .special-offer .offer-desc .offer-subh {
+    font-size: 1rem;
+  }
+  .special-offer .offer-desc .offer-pr {
+    font-size: 0.9rem;
+    padding: 0.25rem;
+  }
+  .special-offer .offer-desc .offer-pr .ap {
+    font-size: 1.25rem;
+  }
+  .special-offer .offer-desc .offer-pr .cp {
+    font-size: 0.8rem;
+  }
+  .special-offer .offer-details .img-box img {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1680,6 +1806,101 @@ section {
     width: 100px;
     height: 100px;
   }
+  .road-2,
+  .road-3 {
+    display: none;
+  }
+  .roadvan .c-van,
+  .roadvan .c-site {
+    width: 75px;
+    height: 75px;
+  }
+  .roadvan .c-road {
+    width: 30px;
+    height: 75px;
+    transform: translateY(30%) rotate(90deg);
+  }
+  @keyframes letsgo {
+    100% {
+      transform: translate(250%, 10%);
+    }
+  }
+  section {
+    padding: 2rem 2rem;
+  }
+  #camp-map .camp-loc {
+    width: 100%;
+    height: 300px;
+  }
+  #camp-schedule .timewise-schedule:after {
+    top: -2%;
+    left: -6%;
+  }
+  #camp-schedule .day-sub-title {
+    width: 100%;
+  }
+  .menu-items .camp-sub-heading {
+    font-size: 1.05rem;
+  }
+  #camp-schedule .day-sub-title .day-f {
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+  }
+  .contact h2 {
+    font-size: 1.25rem;
+    padding: 0.25rem;
+  }
+  .underline {
+    width: 2rem;
+    height: 5px;
+  }
+  #camp-gallery .gallery-items-see-more .brand-box img {
+    width: 80%;
+    height: 350px;
+  }
+  .roadvan .text-msg {
+    top: -10%;
+  }
+  .roadvan .text-msg span {
+    font-size: 0.9rem;
+  }
+  /* speial-day */
+  .special-day {
+    width: 90%;
+  }
+  .special-offer .offer-details {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .special-offer .offer-details .img-1,
+  .special-offer .offer-details .img-2 {
+    margin: 2rem 0;
+  }
+  .special-day .special-title span {
+    font-size: 1.15rem;
+  }
+  .special-offer .offer-desc .offer-h {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .special-offer .offer-desc .offer-subh {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .special-offer .offer-desc .offer-pr {
+    font-size: 0.9rem;
+    padding: 0.25rem;
+  }
+  .special-offer .offer-desc .offer-pr .ap {
+    font-size: 1.05rem;
+  }
+  .special-offer .offer-desc .offer-pr .cp {
+    font-size: 0.8rem;
+  }
+  .special-offer .offer-details .img-box img {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1699,5 +1920,77 @@ section {
   .package .box-container {
     display: grid;
     grid-template-columns: repeat(1, auto);
+  }
+  .road-4 {
+    display: none;
+  }
+  .roadvan .c-van,
+  .roadvan .c-site {
+    width: 50px;
+    height: 50px;
+  }
+  .roadvan .c-road {
+    width: 30px;
+    height: 75px;
+    transform: translateY(20%) rotate(90deg);
+  }
+  @keyframes letsgo {
+    100% {
+      transform: translate(300%, 10%);
+    }
+  }
+  section {
+    padding: 2rem 1rem;
+  }
+  #camp-map .camp-loc {
+    width: 100%;
+    height: 250px;
+  }
+  .menu-items .camp-sub-heading {
+    font-size: 0.9rem;
+  }
+  .timewise-schedule p {
+    font-size: 0.8rem;
+    width: 90%;
+  }
+  .timewise-schedule span {
+    font-size: 0.8rem;
+  }
+  #camp-schedule .timewise-schedule:after {
+    top: -2%;
+    left: -10%;
+  }
+  .contact {
+    width: 90%;
+    margin: 2rem auto;
+  }
+  .contact .contact-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0rem;
+    padding: 2rem 0rem;
+    width: 100%;
+    background-color: #fff;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+  }
+  .fix-menu .fmli {
+    padding: 0.25rem;
+    font-size: 0.8rem;
+  }
+  #camp-gallery .gallery-items-see-more .brand-box img {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #camp-map .camp-loc {
+    width: 100%;
+    height: 200px;
+  }
+  #camp-gallery .gallery-items-see-more .brand-box img {
+    width: 100%;
+    height: 250px;
   }
 }
