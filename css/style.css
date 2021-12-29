@@ -361,7 +361,7 @@ section {
 }
 .fix-menu .menu-links {
   position: sticky;
-  top: 8%;
+  top: 0.1%;
   left: 0;
   margin: 1rem 0;
   /* padding: 0.5rem 0; */
