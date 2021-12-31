@@ -92,7 +92,7 @@ html {
 }
 .navbar.sticky {
   /* margin-bottom: 5rem; */
-  position: relative;
+  position: fixed;
 }
 .navbar .logo a {
   font-size: 2rem;
@@ -361,7 +361,7 @@ section {
 }
 .fix-menu .menu-links {
   position: sticky;
-  top: 0.1%;
+  top: 5%;
   left: 0;
   margin: 1rem 0;
   /* padding: 0.5rem 0; */
@@ -1620,7 +1620,7 @@ section {
     cursor: pointer;
     z-index: 100000;
   }
-  .book .book-row .book-img,
+  /* .book .book-row .book-img,
   .contact .contact-row .contact-img {
     width: 200px;
     height: 200px;
@@ -1637,7 +1637,7 @@ section {
   }
   .review .review-slider {
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
   .footer .footer-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1688,8 +1688,6 @@ section {
     font-size: 0.9rem;
   }
   #camp-gallery .gallery-items-see-more {
-    align-items: center;
-    justify-content: center;
     margin: auto;
   }
   #camp-gallery
@@ -1701,12 +1699,17 @@ section {
     display: none;
   }
   #camp-gallery .seemoreslide {
-    display: flex;
     width: 90%;
+    /* height: 100vh; */
+    margin: 6rem auto;
+    /* display: grid;
+    place-items: center; */
+    /* display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 10rem auto;
+    justify-content: center; */
+    /* margin: 10rem auto; */
   }
+
   #camp-gallery .gallery-items-see-more {
     padding: 1rem;
   }
